@@ -4,17 +4,25 @@
 Open Supabase Dashboard → **SQL Editor** → **New query**. Paste the complete contents of `supabase/schema.sql`, then click **Run**.
 
 ## 2. Create the first administrator
-Open the live admin page:
+There is no sign-up or password-reset flow on the admin page — accounts are created directly in Supabase.
+
+Go to Supabase Dashboard → **Authentication** → **Users** → **Add user** → **Create new user**:
+- Email: `admin@cbcabd.org`
+- Password: (set the account password)
+- Check **Auto Confirm User** so no confirmation email is required.
+
+Then open the live admin page and sign in directly:
 
 - GitHub Pages: `https://rakibnuist.github.io/CBCA/admin/`
 
-Enter `cbcabd2026@gmail.com`, choose a password of at least 8 characters, and click **Create first account**. If email confirmation is enabled, confirm it from Gmail, then sign in. The SQL allowlist automatically gives this email the `super_admin` role.
+The SQL allowlist (`supabase/schema.sql`) automatically gives `admin@cbcabd.org` the `super_admin` role the moment the account is created.
 
 ## 3. Authentication configuration
-No additional Redirect URLs are required for this initial deployment. The admin code does not send a custom redirect URL during signup or password reset. Supabase will use the project's default Site URL for authentication emails. A production Site URL and custom-domain redirects can be configured later when `cbcabd.org` is ready.
+No Redirect URLs, custom email templates, or Site URL changes are required — the admin page only performs `signInWithPassword`, nothing else.
 
 ## 4. Add more administrators
-Sign in as Super Admin → Administrators → Add record. Add the person's email and role **before** they create an account. Available roles:
+1. In Supabase Dashboard → Authentication → Users → **Add user**, create the account for the new person (with **Auto Confirm User** checked).
+2. Sign in to `/admin/` as Super Admin → Administrators → Add record, with their email and one of the roles below, **before or right after** their account is created — the allowlist entry is what grants access:
 - `content_editor` — prepare and edit public content
 - `reviewer` — review and publish content
 - `complaint_officer` — access complaint cases

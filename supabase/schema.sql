@@ -12,7 +12,7 @@ do $$ begin create type public.policy_rating as enum ('unreviewed','positive','c
 create table if not exists public.allowed_admins(
  email text primary key check(email=lower(email)), role public.admin_role not null default 'pending', active boolean not null default true, note text, added_at timestamptz not null default now());
 insert into public.allowed_admins(email,role,active,note) values
-('cbcabd2026@gmail.com','super_admin',true,'Founding super administrator')
+('admin@cbcabd.org','super_admin',true,'Founding super administrator')
 on conflict(email) do update set role=excluded.role,active=true;
 
 create table if not exists public.profiles(
