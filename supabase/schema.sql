@@ -124,6 +124,8 @@ drop policy if exists membership_staff on public.membership_applications; create
 drop policy if exists complaint_submit on public.complaints; create policy complaint_submit on public.complaints for insert to anon,authenticated with check(consent=true);
 drop policy if exists complaint_staff on public.complaints; create policy complaint_staff on public.complaints for all to authenticated using(public.can_complaints()) with check(public.can_complaints());
 
+-- Founding consultancies. member_type='founding' drives the ★ Founding Member badge
+-- in the public directory. Add each consultancy's logo via Admin → Members → Logo image URL.
 alter table public.members disable trigger publish_members;
 insert into public.members(member_code,name,member_type,representative,committee_role,member_status,publication_status) values
 ('CBCA-FM-001','MalishaEdu','founding','Dr. Maruf Mollah','President','active','published'),

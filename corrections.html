@@ -1,2 +1,168 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Misinformation Correction | CBCA</title><meta name="description" content="CBCA procedure for reporting and correcting inaccurate consultancy claims."><meta property="og:title" content="Misinformation Correction | CBCA"><meta property="og:description" content="CBCA procedure for reporting and correcting inaccurate consultancy claims."><meta property="og:image" content="assets/images/cbca-og-cover.jpg"><link rel="icon" href="assets/images/favicon.png"><link rel="stylesheet" href="assets/css/style.css"><script src="assets/js/config.js" defer></script><script src="assets/js/site.js" defer></script></head><body><div class="top-strip"><div class="container"><span>Public information only — CBCA does not provide student consultancy or application services.</span><a data-email="official" href="#">Email the Secretariat</a></div></div>
-<header class="site-header"><div class="container nav-wrap"><a class="brand" href="index.html"><img src="assets/images/cbca-logo.png" alt="CBCA logo"><span>China Bangladesh<br>Consultancy Alliance<small>Trusted education information</small></span></a><button class="menu-toggle" aria-label="Open menu" aria-expanded="false">Menu</button><nav class="nav-links"><a class="" href="index.html">Home</a><a class="" href="about.html">About</a><a class="" href="committee.html">Committee</a><a class="" href="members.html">Members</a><a class="" href="scholarships.html">Scholarship Policies</a><a class="" href="guidelines.html">Guidelines</a><a class="" href="protection.html">Student Protection</a></nav><a class="btn btn-sm nav-cta" href="contact.html">Contact</a></div></header><section class="page-hero"><div class="container"><div class="breadcrumbs"><a href="index.html">Home</a> / Misinformation Correction</div><h1>Misinformation Monitoring & Correction</h1><p>CBCA may formally notify a consultancy when a public claim appears inaccurate, incomplete or materially misleading.</p></div></section><main class="section"><div class="container content-wrap"><article><h2>Correction workflow</h2><div class="step-list"><div class="step"><h3>Document the exact claim</h3><p>Save the URL, screenshot, publication date, account name and complete surrounding context.</p></div><div class="step"><h3>Verify against primary evidence</h3><p>Compare the claim with the official university, scholarship authority, Embassy or other relevant source.</p></div><div class="step"><h3>Internal review</h3><p>CBCA records the issue, rates its potential impact and checks for conflicts of interest.</p></div><div class="step"><h3>Official notice and response period</h3><p>The publisher receives an email describing the concern, evidence and requested correction, with a reasonable opportunity to respond.</p></div><div class="step"><h3>Outcome</h3><p>The record may be closed after correction, clarified through a joint note, escalated under member rules or addressed through a carefully worded public advisory.</p></div></div><div class="callout callout-yellow"><strong>Fairness rule:</strong> CBCA should correct information, not attack people. Public wording must be proportionate, evidence-based and distinguish allegation, disputed fact and established finding.</div></article><aside class="side-card"><div class="card"><h3>Useful evidence</h3><ul class="clean-list"><li>Post or video URL</li><li>Full screenshot with date</li><li>Official source link or document</li><li>Explanation of the contradiction</li><li>Potential harm to students</li></ul></div></aside></div><div class="container"><section class="section section-white" style="border-radius:28px;padding:40px"><div class="grid-2"><div><span class="eyebrow">Report a claim</span><h2>Prepare an evidence email</h2><p>The message opens in your email application. Attach screenshots and official source documents manually.</p></div><form data-mail-form="correction"><input type="hidden" name="subject" value="Misinformation Report — Organization / Claim"><label>Reporter name<input name="reporter_name" required></label><label>Publisher / consultancy<input name="publisher" required></label><label>Post or content URL<input type="url" name="content_url"></label><label>Claim being challenged<textarea name="challenged_claim" required></textarea></label><label>Official evidence or source<textarea name="official_evidence" required></textarea></label><label>Potential student impact<textarea name="potential_impact"></textarea></label><button class="btn btn-red" type="submit">Prepare Correction Report Email</button></form></div></section></div></main><footer class="site-footer"><div class="container"><div class="footer-grid"><div><a class="footer-brand" href="index.html"><img src="assets/images/cbca-logo.png" alt="CBCA logo"><span>China Bangladesh<br>Consultancy Alliance</span></a><p>Bangladesh’s trusted public gateway to Chinese education information, verified consultancy standards and student protection.</p><p><a class="email-chip" data-email="official" href="#">Official email</a></p></div><div><h3>Public Information</h3><ul class="clean-list"><li><a href="scholarships.html">University policies</a></li><li><a href="guidelines.html">Application guidelines</a></li><li><a href="events.html">Events & programs</a></li></ul></div><div><h3>Trust & Accountability</h3><ul class="clean-list"><li><a href="members.html">Verify a member</a></li><li><a href="protection.html">Submit a complaint</a></li><li><a href="corrections.html">Report misinformation</a></li></ul></div><div><h3>Organization</h3><ul class="clean-list"><li><a href="about.html">About CBCA</a></li><li><a href="committee.html">Expert Committee</a></li><li><a href="contact.html">Contact</a></li><li><a href="privacy.html">Privacy & disclaimer</a></li></ul></div></div><div class="footer-bottom"><span>© <span id="year"></span> China Bangladesh Consultancy Alliance. All rights reserved.</span><span>Committee term: through February 2027.</span></div></div></footer></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Corrections &amp; Public Advisories | CBCA</title>
+<meta name="description" content="CBCA's public correction register, misinformation severity levels, official notice process and right of reply for named organizations.">
+<meta name="robots" content="index,follow">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="China Bangladesh Consultancy Alliance">
+<meta property="og:title" content="Corrections &amp; Public Advisories | CBCA">
+<meta property="og:description" content="CBCA's public correction register, misinformation severity levels, official notice process and right of reply for named organizations.">
+<meta property="og:image" content="assets/images/cbca-og-cover.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/images/favicon.png">
+<link rel="stylesheet" href="assets/css/style.css?v=6">
+<script src="assets/js/config.js?v=6" defer></script>
+<script src="assets/js/site.js?v=6" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="assets/js/supabase-config.js?v=6"></script><script src="assets/js/public-data.js?v=6" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<div id="toast" role="status" aria-live="polite"></div>
+<div class="top-strip"><div class="container">
+<span>Public information only — CBCA does not provide student consultancy, application or processing services.</span>
+<a data-email="official" href="#">info@cbcabd.org</a>
+</div></div>
+<header class="site-header"><div class="container nav-wrap">
+<a class="brand" href="index.html"><img src="assets/images/cbca-logo.png" alt="CBCA logo" width="46" height="46">
+<span>China Bangladesh<br>Consultancy Alliance<small>Trusted education information</small></span></a>
+<button class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primaryNav">Menu</button>
+<nav class="nav-links" id="primaryNav" aria-label="Primary"><a href="index.html">Home</a><a href="about.html">About</a><a href="governance.html">Governance</a><a href="members.html">Members</a><a href="scholarships.html">Scholarships</a><a href="guidelines.html">Guides</a><a href="protection.html">Protection</a><a href="news.html">News</a></nav>
+<a class="btn btn-sm nav-cta" href="join.html">Become a Member</a>
+</div></header>
+<main id="main"><section class="page-hero"><div class="container">
+<nav class="breadcrumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span>/</span>Corrections</nav>
+<h1>Corrections &amp; Public Advisories</h1><p>A searchable register of documented misinformation cases, with due process and a right of reply for every organization named.</p>
+</div></section>
+
+<section class="section"><div class="container">
+<div class="callout callout-green">
+<p><strong>Fair wording standard.</strong> CBCA statements identify the exact claim, the evidence and the current verified position. They do not use abusive language, encourage harassment, speculate about motive or declare criminal guilt. Preferred formulations are "incorrect," "unsupported," "misleading," "not verified," "under clarification" and "no evidence supplied by the deadline."</p>
+</div>
+
+<h2 style="margin-top:40px">Public correction register</h2>
+<div class="table-wrap">
+<table>
+<caption>Published correction cases. Personal complaint data never appears in this register.</caption>
+<thead><tr>
+<th scope="col">Case reference</th><th scope="col">Organization</th>
+<th scope="col">Claim reviewed</th><th scope="col">Verified position</th><th scope="col">Status</th>
+</tr></thead>
+<tbody id="supabaseCorrections">
+<tr><td colspan="5"><p class="muted" style="padding:20px">Loading the correction register&hellip;</p></td></tr>
+</tbody>
+</table>
+</div>
+</div></section>
+
+<section class="section section-white"><div class="container content-wrap">
+<article>
+<h2>Severity levels and response times</h2>
+<div class="table-wrap">
+<table>
+<caption>How CBCA grades a misinformation case.</caption>
+<thead><tr><th scope="col">Level</th><th scope="col">Example</th><th scope="col">First action</th><th scope="col">Correction period</th></tr></thead>
+<tbody>
+<tr><td><span class="badge badge-neutral">1 — Minor</span></td><td>Typo, low-impact outdated date, incomplete wording</td><td>Private clarification request</td><td>3 business days</td></tr>
+<tr><td><span class="badge badge-provisional">2 — Material</span></td><td>Incorrect fee, coverage, eligibility or deadline</td><td>Formal correction notice</td><td>48 hours</td></tr>
+<tr><td><span class="badge badge-warn">3 — Serious</span></td><td>Guaranteed scholarship or visa, false affiliation, major financial claim</td><td>Urgent notice and evidence request</td><td>24 hours</td></tr>
+<tr><td><span class="badge badge-warn">4 — Critical</span></td><td>Suspected forged document, active fraud, immediate student harm</td><td>Crisis review and evidence preservation</td><td>Immediate</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2>The official notice process</h2>
+<div class="step-list">
+<div class="step"><h3>Evidence capture</h3><p>Screenshot, post URL, date, platform, exact claim, the primary source used to check it and the potential student harm.</p></div>
+<div class="step"><h3>Conflict-free review</h3><p>A reviewer with no conflict of interest confirms the primary source and approves the case level.</p></div>
+<div class="step"><h3>Confidential notice</h3><p>CBCA sends a private notice by email identifying the claim, the evidence, the correct information and a response deadline.</p></div>
+<div class="step"><h3>Right of reply</h3><p>The organization may provide its source, explanation, correction link or objection.</p></div>
+<div class="step"><h3>Correction recorded</h3><p>Where corrected, CBCA records it and may request a visible correction note if the original claim reached students materially.</p></div>
+<div class="step"><h3>Publication if unresolved</h3><p>Where uncorrected or repeated, CBCA may publish a factual clarification after due-process review. For members, the case may proceed to warning, suspension or termination.</p></div>
+</div>
+
+<h2>When a public advisory may be justified</h2>
+<ul class="check-list">
+<li>A material false claim remains public after formal notice and a reasonable correction opportunity.</li>
+<li>A serious pattern affects multiple students or creates immediate risk.</li>
+<li>A member is suspended or terminated and the public must be able to verify status.</li>
+<li>A university policy materially changed and prior public claims are now unsafe.</li>
+<li>An authority issues a relevant official warning or decision.</li>
+</ul>
+
+<h2>Right of reply</h2>
+<p>A named organization may submit a concise response and supporting evidence. CBCA publishes or fairly summarizes a relevant response unless it is abusive, exposes personal data, is clearly unrelated or creates legal or safety risk. New verified evidence triggers review and correction.</p>
+</article>
+
+<aside class="side-card">
+<div class="card">
+<h3>Report misinformation</h3>
+<p class="muted">Send the post link, a screenshot, the date and the claim you believe is inaccurate.</p>
+<p><a class="email-chip" data-email="verification" href="#">verification@cbcabd.org</a></p>
+</div>
+<div class="card">
+<h3>Request a correction</h3>
+<p class="muted">If a CBCA notice about your organization is inaccurate, supply new evidence by official email. Material corrections are made promptly with a visible note stating what changed.</p>
+</div>
+</aside>
+</div></section>
+
+<section class="section"><div class="container-narrow">
+<div class="card" style="padding:36px">
+<span class="eyebrow">Report a claim</span>
+<h2>Submit a misinformation report</h2>
+<p class="muted">This prepares an email in your own mail application. Attach screenshots manually before sending.</p>
+<form data-mail-form="verification" data-subject="CBCA Misinformation Report">
+<input type="hidden" name="subject" value="CBCA Misinformation Report">
+<label>Organization or page publishing the claim <span class="required-mark">*</span><input name="organization_name" required></label>
+<div class="field-grid">
+<label>Platform<input name="platform" placeholder="Facebook, website, YouTube…"></label>
+<label>Post or page URL<input type="url" name="post_url" placeholder="https://"></label>
+</div>
+<label>The exact claim you believe is inaccurate <span class="required-mark">*</span><textarea name="incorrect_claim" required></textarea></label>
+<label>What you understand the correct information to be<textarea name="verified_information"></textarea></label>
+<label>Official source supporting the correct information<input type="url" name="official_source_url" placeholder="https://"></label>
+<button class="btn" type="submit">Prepare Report Email</button>
+<p class="form-note">CBCA reviews every report against primary sources. Submitting a report does not mean a finding has been made against anyone.</p>
+</form>
+</div>
+</div></section>
+</main><footer class="site-footer"><div class="container">
+<div class="footer-grid">
+<div>
+<a class="footer-brand" href="index.html"><img src="assets/images/cbca-logo.png" alt="CBCA logo" width="52" height="52">
+<span>China Bangladesh<br>Consultancy Alliance</span></a>
+<p>An alliance of Bangladesh-based China education consultancies working for accurate public information, verified professional standards and student protection.</p>
+<p><a class="email-chip" data-email="official" href="#">info@cbcabd.org</a></p>
+</div>
+<div><h3>Public Information</h3><ul class="clean-list">
+<li><a href="scholarships.html">Scholarship records</a></li>
+<li><a href="policy-database.html">University policy database</a></li>
+<li><a href="guidelines.html">Application guides</a></li>
+<li><a href="events.html">Events &amp; programs</a></li>
+<li><a href="news.html">News &amp; announcements</a></li>
+</ul></div>
+<div><h3>Trust &amp; Accountability</h3><ul class="clean-list">
+<li><a href="members.html">Verify a member</a></li>
+<li><a href="join.html">Become a member</a></li>
+<li><a href="protection.html">Student complaint desk</a></li>
+<li><a href="corrections.html">Corrections &amp; advisories</a></li>
+</ul></div>
+<div><h3>Organization</h3><ul class="clean-list">
+<li><a href="about.html">About CBCA</a></li>
+<li><a href="governance.html">Governance</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="policies.html">Policies</a></li>
+<li><a href="privacy.html">Privacy &amp; disclaimer</a></li>
+</ul></div>
+</div>
+<p class="footer-disclaimer" data-disclaimer="standard"></p>
+<div class="footer-bottom">
+<span>&copy; <span id="year"></span> China Bangladesh Consultancy Alliance. All rights reserved.</span>
+<span>Founding phase · Public information alliance</span>
+</div>
+</div></footer>
+</body>
+</html>
