@@ -14,6 +14,7 @@ create table if not exists public.allowed_admins(
 insert into public.allowed_admins(email,role,active,note) values
 ('admin@cbcabd.org','super_admin',true,'Founding super administrator')
 on conflict(email) do update set role=excluded.role,active=true;
+update public.allowed_admins set active=false where email<>'admin@cbcabd.org';
 
 create table if not exists public.profiles(
  id uuid primary key references auth.users(id) on delete cascade, email text not null, full_name text,
