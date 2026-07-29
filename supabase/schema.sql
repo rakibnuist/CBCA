@@ -123,6 +123,7 @@ drop policy if exists membership_staff on public.membership_applications; create
 drop policy if exists complaint_submit on public.complaints; create policy complaint_submit on public.complaints for insert to anon,authenticated with check(consent=true);
 drop policy if exists complaint_staff on public.complaints; create policy complaint_staff on public.complaints for all to authenticated using(public.can_complaints()) with check(public.can_complaints());
 
+alter table public.members disable trigger publish_members;
 insert into public.members(member_code,name,member_type,representative,committee_role,member_status,publication_status) values
 ('CBCA-FM-001','MalishaEdu','founding','Dr. Maruf Mollah','President','active','published'),
 ('CBCA-FM-002','Atlas Study Consultants','founding','Md Asiful Mowla Rehan','Vice President','active','published'),
@@ -136,3 +137,4 @@ insert into public.members(member_code,name,member_type,representative,committee
 ('CBCA-FM-010','RM International','founding','Ranzee Anwer','Emergency & Crisis Coordinator','active','published'),
 ('CBCA-FM-011','CSH International','founding','Rayhanul Islam Rajib','Executive Member','active','published')
 on conflict(member_code) do nothing;
+alter table public.members enable trigger publish_members;
