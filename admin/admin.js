@@ -1,5 +1,10 @@
 const cfg=window.CBCA_SUPABASE; const sb=supabase.createClient(cfg.url,cfg.publishableKey);
-const authView=document.querySelector('#authView'),appView=document.querySelector('#appView'),content=document.querySelector('#content'),title=document.querySelector('#pageTitle');
+const authView=document.querySelector('#authView');
+const appView=document.querySelector('#appView');
+const content=document.querySelector('#content');
+const title=document.querySelector('#pageTitle');
+const loginEmail=document.querySelector('#loginEmail');
+const loginPassword=document.querySelector('#loginPassword');
 let profile=null,currentView='overview';
 const defs={
  members:{label:'Members',cols:['member_code','name','representative','committee_role','member_status','publication_status'],fields:[['member_code','Member code'],['name','Consultancy name','required'],['member_type','Member type','select:founding,new,associate'],['representative','Representative'],['committee_role','Committee role'],['address','Address','textarea'],['phone','Phone'],['email','Email','email'],['website','Website'],['facebook','Facebook'],['logo_url','Logo URL'],['description','Description','textarea'],['member_status','Member status','select:pending,active,suspended,expired,cancelled'],['verification_date','Verification date','date'],['expiry_date','Expiry date','date'],['publication_status','Publication','select:draft,review,published,archived']]},
