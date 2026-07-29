@@ -8,7 +8,7 @@ Open the live admin page:
 
 - GitHub Pages: `https://rakibnuist.github.io/CBCA/admin/`
 
-Enter `cbcassociation2026@gmail.com`, choose a password of at least 8 characters, and click **Create first account**. If email confirmation is enabled, confirm it from Gmail, then sign in. The SQL allowlist automatically gives this email the `super_admin` role.
+Enter `cbcabd2026@gmail.com`, choose a password of at least 8 characters, and click **Create first account**. If email confirmation is enabled, confirm it from Gmail, then sign in. The SQL allowlist automatically gives this email the `super_admin` role.
 
 ## 3. Authentication configuration
 No additional Redirect URLs are required for this initial deployment. The admin code does not send a custom redirect URL during signup or password reset. Supabase will use the project's default Site URL for authentication emails. A production Site URL and custom-domain redirects can be configured later when `cbcabd.org` is ready.
