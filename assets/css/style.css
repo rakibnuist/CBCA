@@ -354,6 +354,9 @@ legend{font-weight:800;font-size:var(--fs-sm);color:var(--ink);padding:0 8px}
   letter-spacing:.1em;margin-bottom:var(--s4)}
 .site-footer a{color:#cfe3d8}
 .site-footer a:hover{color:#fff}
+/* Keep the white email chip legible on the dark footer — must out-specify `.site-footer a` */
+.site-footer a.email-chip{background:#fff;color:var(--green-700);border-color:#fff}
+.site-footer a.email-chip:hover{background:#eaf5ef;color:var(--green-900);border-color:#eaf5ef}
 .site-footer .clean-list li{border-bottom-color:rgba(255,255,255,.08);padding:9px 0}
 .footer-brand{display:flex;gap:var(--s3);align-items:center;color:#fff;font-weight:800;margin-bottom:var(--s4)}
 .footer-brand:hover{text-decoration:none}
